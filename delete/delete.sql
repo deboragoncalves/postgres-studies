@@ -1,0 +1,1 @@
+DELETE FROM pointsGame WHERE number_points = 20
