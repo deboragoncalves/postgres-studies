@@ -2,4 +2,4 @@
 
 -- SELECT * FROM players;
 
-SELECT * FROM staff;
+SELECT name FROM staff WHERE name != 'Anderson';
