@@ -1,0 +1,1 @@
+INSERT INTO players (name, number, position) VALUES ('Jaqueline', 8, 'Ponteira');
