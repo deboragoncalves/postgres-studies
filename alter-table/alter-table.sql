@@ -1,0 +1,5 @@
+-- Name: var char 200, mudar para 100
+
+ALTER TABLE players ALTER COLUMN name TYPE VARCHAR(100);
+
+ALTER TABLE staff ALTER COLUMN name TYPE VARCHAR(100);
