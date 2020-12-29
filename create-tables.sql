@@ -10,3 +10,13 @@ CREATE TABLE IF NOT EXISTS staff (
 	name VARCHAR(200) NOT NULL,
 	function VARCHAR(30) NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS pointsGame (
+	id_points_game SMALLSERIAL NOT NULL PRIMARY KEY,
+	id_player SMALLSERIAL NOT NULL,
+	number_points INTEGER NOT NULL,
+	game VARCHAR (200) NOT NULL,
+	season VARCHAR (50) NOT NULL,
+	championship VARCHAR (200) NOT NULL,
+	FOREIGN KEY(id_player) REFERENCES players(id_player)
+);
