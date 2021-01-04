@@ -1,0 +1,1 @@
+SELECT MIN(id_player) FROM players;
