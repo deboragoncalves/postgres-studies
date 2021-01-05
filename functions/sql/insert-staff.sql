@@ -1,4 +1,4 @@
--- Function 1 - insert staff: security definer, returns null on null input, language sql
+-- Function 1 - insert staff: security definer, returns null on null input - não executa caso argumentos sejam null, language sql
 
 CREATE OR REPLACE FUNCTION insert_staff(name VARCHAR(200), function VARCHAR(200))
 RETURNS VOID
@@ -10,5 +10,7 @@ AS $$
 $$;
 
 SELECT insert_staff('Bernardinho', 'Coach');
+
+-- SELECT insert_staff('Bernardinho', null);
 
 -- SELECT * FROM staff;
