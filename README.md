@@ -1,3 +1,4 @@
 # Postgres Studies
 
-## In development. Exercises are being done the Digital Innovation One's course (Conceitos e melhores práticas com bancos de dados PostgreSQL).
+## Exercises were done during the Digital Innovation One's course about PostgreSQL (Conceitos e melhores práticas com bancos de dados PostgreSQL).
+
