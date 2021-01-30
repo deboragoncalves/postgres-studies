@@ -1,6 +1,6 @@
 -- Create table
 
-CREATE TABLE hotel_checkin (id SERIAL PRIMARY KEY, host_id INT NOT NULL, date_in DATE NOT NULL, date_out DATE NOT NULL, plusCar BOOLEAN NOT NULL, FOREIGN KEY (host_id) REFERENCES hotel_host(id));
+CREATE TABLE hotel_checkin (id SERIAL PRIMARY KEY, host_id INT NOT NULL, plusCar BOOLEAN NOT NULL, FOREIGN KEY (host_id) REFERENCES hotel_host(id));
 
 -- Rename column
 
