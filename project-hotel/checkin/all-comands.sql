@@ -39,3 +39,5 @@ SELECT * FROM hotel_checkin;
 -- Delete
 
 DELETE FROM hotel_checkin WHERE id = 2;
+
+DELETE FROM hotel_checkin WHERE id = 1;
