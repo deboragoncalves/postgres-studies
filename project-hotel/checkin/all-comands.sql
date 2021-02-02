@@ -28,6 +28,8 @@ ALTER TABLE hotel_checkin ADD COLUMN host_id INT, ADD FOREIGN KEY (host_id) REFE
 
 INSERT INTO hotel_checkin (host_id, date_in, date_out, plus_car) VALUES (1, '2021-01-21 19:00:00', '2021-01-25 09:00:00', false);
 
+INSERT INTO hotel_checkin (host_id, date_in, date_out, plus_car) VALUES (1, '2021-01-31 19:00:00', '2021-02-01 14:00:00', true);
+
 INSERT INTO hotel_checkin (host_id, date_in, date_out, plus_car) VALUES (2, '2020-12-11 11:00:00', '2021-12-22 19:00:00', true);
 
 -- Select
