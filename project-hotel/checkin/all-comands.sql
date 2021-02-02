@@ -1,16 +1,28 @@
 -- Create table
 
-CREATE TABLE hotel_checkin (id SERIAL PRIMARY KEY, host_id INT NOT NULL, plusCar BOOLEAN NOT NULL, FOREIGN KEY (host_id) REFERENCES hotel_host(id));
+CREATE TABLE hotel_checkin (id SERIAL PRIMARY KEY, host_id INT NOT NULL, plusCar BOOLEAN NOT NULL);
+
+-- Drop table
+
+DROP TABLE hotel_checkin;
 
 -- Rename column
 
 ALTER TABLE hotel_checkin RENAME COLUMN pluscar TO plus_car;
+
+-- Drop column
+
+ALTER TABLE hotel_checkin DROP COLUMN host_id;
 
 -- Add Column: timestamp
 
 ALTER TABLE hotel_checkin ADD COLUMN date_in TIMESTAMP NOT NULL;
 
 ALTER TABLE hotel_checkin ADD COLUMN date_out TIMESTAMP NULL;
+
+-- Add column - fk
+
+ALTER TABLE hotel_checkin ADD COLUMN host_id INT, ADD FOREIGN KEY (host_id) REFERENCES hotel_host(id);
 
 -- Insert
 
